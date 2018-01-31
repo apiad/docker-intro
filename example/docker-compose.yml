@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  app:
+    image: gplsi/example
+    build: "."
+    ports:
+      - "5000:5000"
+    command: "python /app/app_mongo.py"
+
+  mongo:
+    image: mongo
