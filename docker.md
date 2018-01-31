@@ -245,7 +245,7 @@ Además tenemos un comando `docker-compose build` que hará `build` a todas las 
 
 Finalmente, podemos además tener más de un archivo `docker-compose`, si tenemos configuraciones diferentes para producción y desarrollo. Por ejemplo, podemos adicionar un archivo `dev.yml` (el nombre concreto no importa), con el siguiente contenido:
 
-```yml
+```yaml
 version: "3.3"
 
 services:
