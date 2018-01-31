@@ -43,9 +43,9 @@ Con `docker` esta situación no es ningún problema, Antonio simplemente le da a
 
 Antes de comenzar, aquí hay unos *links* con las guías de instalación oficiales:
 
-* **Windows**: [https://docs.docker.com/docker-for-windows/install/]()
-* **Mac OS**: [https://docs.docker.com/docker-for-mac/install/]()
-* **Linux (Ubuntu)**: [https://docs.docker.com/install/linux/docker-ce/ubuntu/]()
+* **Windows**: [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)
+* **Mac OS**: [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/)
+* **Linux (Ubuntu)**: [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 ### Usando `docker` para ejecutar una aplicación
 
@@ -69,7 +69,7 @@ Donde `[comando]` es un comando de inicialización propio de la aplicación, y `
 docker run -p 5000:5000 gplsi/leto python /leto/leto-ui/app.py
 ```
 
-La opción `-p 5000:5000` indica que el puerto `5000` dentro del contenedor se enlaza al puerto `5000` del *host*. Luego visitamos en un navegador [http://localhost:5000]() y ya está. Si los desarrolladores quisieran, pudieran haber pre-configurado la imagen de modo que solo hacer `docker run` ya estuvieran pre-definido los puertos y comandos necesarios.
+La opción `-p 5000:5000` indica que el puerto `5000` dentro del contenedor se enlaza al puerto `5000` del *host*. Luego visitamos en un navegador [http://localhost:5000](http://localhost:5000) y ya está. Si los desarrolladores quisieran, pudieran haber pre-configurado la imagen de modo que solo hacer `docker run` ya estuvieran pre-definido los puertos y comandos necesarios.
 
 De esta forma podemos utilizar aplicaciones complejas con muchas dependencias sin necesidad de instalarnos niguna, siempre y cuando la imagen esté adecuadamente construida.
 
@@ -202,7 +202,7 @@ En Docker es conveniente ver estos servicios distintos como contenedores distint
 
 Ahora bien, aunque podemos hacer todo esto directamente con Docker, levantando varios contenedores a la vez y pasando como opciones del comando `docker` los puertos que se conectan a otros puertos, esto puede volverse tedioso rápidamente. Vamos a usar entonces **docker-compose**, una utilidad de orquestación de servicios para Docker.
 
-**Guía de instalación:** [https://docs.docker.com/compose/install/]()
+**Guía de instalación:** [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
 Con `docker-compose` añadiremos un archivo más a la mezcla, que se denomina `docker-compose.yml`, y que describe toda nuestra arquitectura de servicios. Este archivo nos servirá para definir de un golpe qué servicios (imágenes) es necesario levantar, quién se conecta con quién, qué comandos ejecutar, todo en un solo archivo, versionable, reproducible y manejable.
 
